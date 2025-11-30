@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+// Locales for norwegian layout
+#include <locale/keys_nb.h>
+
 #define BASE            0
 #define SPECIAL_LEFT    1
 #define SPECIAL_RIGHT   2
@@ -52,16 +55,16 @@
             display-name = "Special left";
 
             bindings = <
-            &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &none  &kp PERCENT  &kp AMPERSAND         &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp PLUS  &kp NON_US_BACKSLASH
+            &kp NB_EXCLAMATION  &kp NB_DOUBLE_QUOTES  &kp NB_HASH  &none  &kp NB_PERCENT  &kp NB_AMPERSAND      &kp NB_SLASH  &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_EQUAL  &kp NB_PLUS  &kp NB_BACKSLASH
 
-            &kp PIPE  &none  &none  &none  &none  &none                                             &none  &none  &none  &none  &none  &kp CARET
+            &kp NB_PIPE  &none  &none  &none  &none  &none                                                      &none  &none  &none  &none  &none  &kp NB_CARET
 
-            &none  &none  &none  &none  &none  &none                                                &none  &none  &none  &none  &none  &kp SINGLE_QUOTE
+            &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &kp NB_SINGLE_QUOTE
 
-            &none &kp LESS_THAN  &none  &none  &none  &none                                         &none  &none  &kp COMMA  &kp PERIOD  &kp MINUS  &none  
+            &none &kp NB_LESS_THAN  &none  &none  &none  &none                                                  &none  &none  &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none  
 
             
-            &trans  &trans  &trans  &trans  &trans  &trans                                          &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
@@ -71,16 +74,16 @@
             display-name = "Special right";
 
             bindings = <
-            &none  &kp AT  &none  &kp DOLLAR  &none  &none          &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp QUESTION  &kp GRAVE
+            &none  &kp NB_AT  &none  &kp NB_DOLLAR  &none  &none        &kp NB_LEFT_BRACE  &kp NB_LEFT_BRACKET  &kp NB_RIGHT_BRACKET  &kp NB_RIGHT_BRACE  &kp NB_QUESTION  &kp NB_GRAVE
 
-            &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp TILDE
+            &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &kp NB_TILDE
 
-            &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &kp ASTERISK
+            &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &kp NB_ASTERISK
 
-            &none  &kp GREATER_THAN  &none  &none  &none  &none     &none  &none  &kp SEMICOLON  &kp COLON  &kp UNDERSCORE  &none  
+            &none  &kp NB_GREATER_THAN  &none  &none  &none  &none      &none  &none  &kp NB_SEMICOLON  &kp NB_COLON  &kp NB_UNDERSCORE  &none  
             
 
-            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
