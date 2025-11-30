@@ -61,7 +61,7 @@
 
             &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &kp NB_SINGLE_QUOTE
 
-            &none &kp NB_LESS_THAN  &none  &none  &none  &none  &trans                                          &trans  &none  &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none  
+            &none &kp NB_LESS_THAN  &none  &none  &none  &none  &trans                                          &trans  &none  &none &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none
 
             
             &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans 
@@ -86,7 +86,7 @@
             &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_FAST_FORWARD C_REWIND>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
         };
 
         function {
