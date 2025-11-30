@@ -48,7 +48,7 @@
             &kp LALT  &kp LGUI  &mo SPECIAL_LEFT  &kp SPACE  &kp LCTRL      &kp ENTER  &kp BACKSPACE  &mo SPECIAL_RIGHT  &none  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_FAST_FORWARD C_REWIND>;
         };
 
         special_left {
@@ -61,32 +61,32 @@
 
             &none  &none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none  &kp NB_SINGLE_QUOTE
 
-            &none &kp NB_LESS_THAN  &none  &none  &none  &none                                                  &none  &none  &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none  
+            &none &kp NB_LESS_THAN  &none  &none  &none  &none  &trans                                          &trans  &none  &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none  
 
             
             &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
         };
 
         special_right {
             display-name = "Special right";
 
             bindings = <
-            &none  &kp NB_AT  &none  &kp NB_DOLLAR  &none  &none        &kp NB_LEFT_BRACE  &kp NB_LEFT_BRACKET  &kp NB_RIGHT_BRACKET  &kp NB_RIGHT_BRACE  &kp NB_QUESTION  &kp NB_GRAVE
+            &none  &kp NB_AT  &none  &kp NB_DOLLAR  &none  &none                &kp NB_LEFT_BRACE  &kp NB_LEFT_BRACKET  &kp NB_RIGHT_BRACKET  &kp NB_RIGHT_BRACE  &kp NB_QUESTION  &kp NB_GRAVE
 
-            &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &kp NB_TILDE
+            &none  &none  &none  &none  &none  &none                            &none  &none  &none  &none  &none  &kp NB_TILDE
 
-            &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &kp NB_ASTERISK
+            &none  &none  &none  &none  &none  &none                            &none  &none  &none  &none  &none  &kp NB_ASTERISK
 
-            &none  &kp NB_GREATER_THAN  &none  &none  &none  &none      &none  &none  &kp NB_SEMICOLON  &kp NB_COLON  &kp NB_UNDERSCORE  &none  
+            &none  &kp NB_GREATER_THAN  &none  &none  &none  &none &trans       &trans  &none  &none  &kp NB_SEMICOLON  &kp NB_COLON  &kp NB_UNDERSCORE  &none  
             
 
             &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_FAST_FORWARD C_REWIND>;
         };
 
         function {
