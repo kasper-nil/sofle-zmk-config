@@ -19,16 +19,6 @@
 #define FUNCTION        3
 
 / {
-
-    // Activate ADJUST layer by pressing raise and lower
-    // conditional_layers {
-    //   compatible = "zmk,conditional-layers";
-    //   adjust_layer {
-    //     if-layers = <LOWER RAISE>;
-    //     then-layer = <ADJUST>;
-    //   };
-    // };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -48,7 +38,7 @@
             &kp LALT  &kp LGUI  &mo SPECIAL_LEFT  &kp SPACE  &kp LCTRL      &kp ENTER  &kp BACKSPACE  &mo SPECIAL_RIGHT  &none  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
         };
 
         special_left {
@@ -64,10 +54,10 @@
             &none &kp NB_LESS_THAN  &none  &none  &none  &none  &trans                                          &trans  &none  &none &kp NB_COMMA  &kp NB_PERIOD  &kp NB_MINUS  &none
 
             
-            &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
         };
 
         special_right {
@@ -83,10 +73,10 @@
             &none  &kp NB_GREATER_THAN  &none  &none  &none  &none &trans       &trans  &none  &none  &kp NB_SEMICOLON  &kp NB_COLON  &kp NB_UNDERSCORE  &none  
             
 
-            &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
         };
 
         function {
@@ -102,10 +92,10 @@
             &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none  
             
 
-            &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREV C_NEXT>;
         };
 
         template {
@@ -118,13 +108,13 @@
 
             &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
 
-            &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none  
+            &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  
             
 
-            &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans 
+            &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREV C_NEXT>;
         };
     };
 };
