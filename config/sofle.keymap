@@ -48,7 +48,7 @@
             &kp LALT  &kp LGUI  &mo SPECIAL_LEFT  &kp SPACE  &kp LCTRL      &kp ENTER  &kp BACKSPACE  &mo SPECIAL_RIGHT  &none  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_FAST_FORWARD C_REWIND>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_NEXT C_PREV>;
         };
 
         special_left {
