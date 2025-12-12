@@ -35,7 +35,7 @@
             &kp LGUI  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp C_MUTE             &kp C_PLAY_PAUSE  &kp N  &kp M  &kp LEFT &kp DOWN  &kp UP &kp RIGHT
 
 
-            &mo FUNCTION  &kp LALT  &mo SPECIAL_LEFT  &kp SPACE  &kp LCTRL      &kp ENTER  &kp BACKSPACE  &mo SPECIAL_RIGHT  &none  &none
+            &mo FUNCTION  &kp LALT  &mo SPECIAL_LEFT  &kp SPACE  &kp LCTRL      &kp ENTER  &kp BACKSPACE  &mo SPECIAL_RIGHT  &none  &mo FUNCTION
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
