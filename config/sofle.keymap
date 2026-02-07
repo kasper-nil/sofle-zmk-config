@@ -38,21 +38,6 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
         };
 
-        os_mac {
-            display-name = "Mac";
-
-            bindings = <
-            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
-            &kp LALT &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
-
-            &trans &kp LCTRL &trans &trans &kp LGUI                   &trans &trans &trans &trans &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
-        };
-
         special_left {
             display-name = "Special left";
 
@@ -108,6 +93,21 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREV C_NEXT>;
+        };
+
+        os_mac {
+            display-name = "Mac";
+
+            bindings = <
+            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
+            &kp LALT &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+
+            &trans &kp LCTRL &trans &trans &kp LGUI                   &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
         };
 
         template {
