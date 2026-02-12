@@ -102,9 +102,9 @@
             &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans &trans                 &trans &trans &trans &trans &trans &trans
-            &kp LALT &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+            &kp LCTRL &trans &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans &trans &trans
 
-            &trans &kp LCTRL &trans &trans &kp LGUI                   &trans &trans &trans &kp CAPSLOCK &trans
+            &trans &kp CAPSLOCK &trans &trans &kp LGUI                &trans &trans &trans &kp LALT &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP  &inc_dec_kp C_PREV C_NEXT>;
