@@ -1,0 +1,31 @@
+/*
+ * Rename this file to <keyboard>.keymap on each keyboard branch
+ * (must match the shield name).
+ *
+ * Layout-specific bindings live on the keyboard branch — the row/column
+ * count and thumb cluster differ between Sofle, Lily58, Corne, etc.
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+// Norwegian locale (delete or swap if you use a different layout)
+#include <locale/keys_nb.h>
+
+#define BASE 0
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "Base";
+
+            // Fill in bindings = < ... >; matching your keyboard's matrix.
+            bindings = <>;
+        };
+    };
+};
