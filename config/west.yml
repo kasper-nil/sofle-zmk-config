@@ -17,5 +17,6 @@ manifest:
       revision: main
     - name: nice-view-gem
       remote: m165437
+      revision: v0.3.0
   self:
     path: config
